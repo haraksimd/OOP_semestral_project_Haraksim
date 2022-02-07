@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="434.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.zaznamyController">
+   <children>
+      <TableView fx:id="recordTable" layoutY="49.0" prefHeight="385.0" prefWidth="656.0">
+        <columns>
+          <TableColumn fx:id="dateRecordColumn" prefWidth="114.0" text="Date" />
+          <TableColumn fx:id="authorRecordColumn" prefWidth="120.0" text="Author" />
+            <TableColumn fx:id="recordColumn" prefWidth="421.0" text="Record" />
+        </columns>
+      </TableView>
+      <Button fx:id="addRecordBtn" layoutX="475.0" layoutY="14.0" mnemonicParsing="false" onAction="#submitRecord" text="Add" />
+      <Button fx:id="delRecordBtn" layoutX="547.0" layoutY="14.0" mnemonicParsing="false" onAction="#deleteRecord" text="Delete" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button fx:id="refreshBtn" layoutX="403.0" layoutY="14.0" mnemonicParsing="false" onAction="#fillRecordsTable" text="Refresh" />
+   </children>
+</AnchorPane>
